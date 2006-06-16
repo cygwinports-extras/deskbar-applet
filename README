@@ -1,0 +1,316 @@
+deskbar-applet
+------------------------------------------
+The goal of DeskbarApplet is to provide an omnipresent versatile search
+interface. By typing search terms into the deskbar entry in your panel
+you are presented with the search results as you type.
+
+Seaches are handled by a series of plugins. DeskbarApplet provides a
+simple interface to manage these plugins to provide you with the search
+results that fit your needs.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  gnome-panel-2.14.1-1
+  gtk2-x11-2.8.17-1
+  libX11_6-1.0.0-2
+  libgnome-desktop2-2.14.1-1
+  pygconf2-2.12.2-1
+  pygnome2-2.12.2-1
+  pygnomeapplet-2.14.0-1
+  pygnomevfs2-2.12.3-1
+  pygobject2-2.10.1-1
+  pygtk2-2.8.6-1
+  python-2.4.3-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.2-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  intltool-0.35.0-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://raphael.slinckx.net/deskbar/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/deskbar-applet/
+
+-------------------------------------------
+
+Build instructions:
+  unpack deskbar-applet-2.14.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./deskbar-applet-2.14.2-X.cygport all
+
+This will create:
+  /usr/src/deskbar-applet-2.14.2-X-src.tar.bz2
+  /usr/src/deskbar-applet-2.14.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/deskbar-applet.schemas
+  /etc/postinstall/deskbar-applet.sh
+  /etc/preremove/deskbar-applet.sh
+  /usr/lib/bonobo/servers/Deskbar_Applet.server
+  /usr/lib/deskbar-applet/deskbar-applet
+  /usr/lib/deskbar-applet/handlers/beagle-live.py
+  /usr/lib/deskbar-applet/handlers/beagle-live.pyc
+  /usr/lib/deskbar-applet/handlers/beagle-live.pyo
+  /usr/lib/deskbar-applet/handlers/beagle-static.py
+  /usr/lib/deskbar-applet/handlers/beagle-static.pyc
+  /usr/lib/deskbar-applet/handlers/beagle-static.pyo
+  /usr/lib/deskbar-applet/handlers/email_address.py
+  /usr/lib/deskbar-applet/handlers/email_address.pyc
+  /usr/lib/deskbar-applet/handlers/email_address.pyo
+  /usr/lib/deskbar-applet/handlers/epiphany.py
+  /usr/lib/deskbar-applet/handlers/epiphany.pyc
+  /usr/lib/deskbar-applet/handlers/epiphany.pyo
+  /usr/lib/deskbar-applet/handlers/files.py
+  /usr/lib/deskbar-applet/handlers/files.pyc
+  /usr/lib/deskbar-applet/handlers/files.pyo
+  /usr/lib/deskbar-applet/handlers/galago.py
+  /usr/lib/deskbar-applet/handlers/galago.pyc
+  /usr/lib/deskbar-applet/handlers/galago.pyo
+  /usr/lib/deskbar-applet/handlers/galeon.py
+  /usr/lib/deskbar-applet/handlers/galeon.pyc
+  /usr/lib/deskbar-applet/handlers/galeon.pyo
+  /usr/lib/deskbar-applet/handlers/google-live.py
+  /usr/lib/deskbar-applet/handlers/google-live.pyc
+  /usr/lib/deskbar-applet/handlers/google-live.pyo
+  /usr/lib/deskbar-applet/handlers/gtkbookmarks.py
+  /usr/lib/deskbar-applet/handlers/gtkbookmarks.pyc
+  /usr/lib/deskbar-applet/handlers/gtkbookmarks.pyo
+  /usr/lib/deskbar-applet/handlers/history.py
+  /usr/lib/deskbar-applet/handlers/history.pyc
+  /usr/lib/deskbar-applet/handlers/history.pyo
+  /usr/lib/deskbar-applet/handlers/mozilla.py
+  /usr/lib/deskbar-applet/handlers/mozilla.pyc
+  /usr/lib/deskbar-applet/handlers/mozilla.pyo
+  /usr/lib/deskbar-applet/handlers/pathprograms.py
+  /usr/lib/deskbar-applet/handlers/pathprograms.pyc
+  /usr/lib/deskbar-applet/handlers/pathprograms.pyo
+  /usr/lib/deskbar-applet/handlers/programs.py
+  /usr/lib/deskbar-applet/handlers/programs.pyc
+  /usr/lib/deskbar-applet/handlers/programs.pyo
+  /usr/lib/deskbar-applet/handlers/volumes.py
+  /usr/lib/deskbar-applet/handlers/volumes.pyc
+  /usr/lib/deskbar-applet/handlers/volumes.pyo
+  /usr/lib/deskbar-applet/handlers/web_address.py
+  /usr/lib/deskbar-applet/handlers/web_address.pyc
+  /usr/lib/deskbar-applet/handlers/web_address.pyo
+  /usr/lib/deskbar-applet/handlers/yahoo.py
+  /usr/lib/deskbar-applet/handlers/yahoo.pyc
+  /usr/lib/deskbar-applet/handlers/yahoo.pyo
+  /usr/lib/pkgconfig/deskbar-applet.pc
+  /usr/lib/python2.4/site-packages/deskbar/BrowserMatch.py
+  /usr/lib/python2.4/site-packages/deskbar/BrowserMatch.pyc
+  /usr/lib/python2.4/site-packages/deskbar/BrowserMatch.pyo
+  /usr/lib/python2.4/site-packages/deskbar/Categories.py
+  /usr/lib/python2.4/site-packages/deskbar/Categories.pyc
+  /usr/lib/python2.4/site-packages/deskbar/Categories.pyo
+  /usr/lib/python2.4/site-packages/deskbar/DeskbarApplet.py
+  /usr/lib/python2.4/site-packages/deskbar/DeskbarApplet.pyc
+  /usr/lib/python2.4/site-packages/deskbar/DeskbarApplet.pyo
+  /usr/lib/python2.4/site-packages/deskbar/DeskbarAppletPreferences.py
+  /usr/lib/python2.4/site-packages/deskbar/DeskbarAppletPreferences.pyc
+  /usr/lib/python2.4/site-packages/deskbar/DeskbarAppletPreferences.pyo
+  /usr/lib/python2.4/site-packages/deskbar/DeskbarHistory.py
+  /usr/lib/python2.4/site-packages/deskbar/DeskbarHistory.pyc
+  /usr/lib/python2.4/site-packages/deskbar/DeskbarHistory.pyo
+  /usr/lib/python2.4/site-packages/deskbar/Handler.py
+  /usr/lib/python2.4/site-packages/deskbar/Handler.pyc
+  /usr/lib/python2.4/site-packages/deskbar/Handler.pyo
+  /usr/lib/python2.4/site-packages/deskbar/Indexer.py
+  /usr/lib/python2.4/site-packages/deskbar/Indexer.pyc
+  /usr/lib/python2.4/site-packages/deskbar/Indexer.pyo
+  /usr/lib/python2.4/site-packages/deskbar/Keybinder.py
+  /usr/lib/python2.4/site-packages/deskbar/Keybinder.pyc
+  /usr/lib/python2.4/site-packages/deskbar/Keybinder.pyo
+  /usr/lib/python2.4/site-packages/deskbar/Match.py
+  /usr/lib/python2.4/site-packages/deskbar/Match.pyc
+  /usr/lib/python2.4/site-packages/deskbar/Match.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ModuleContext.py
+  /usr/lib/python2.4/site-packages/deskbar/ModuleContext.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ModuleContext.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ModuleList.py
+  /usr/lib/python2.4/site-packages/deskbar/ModuleList.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ModuleList.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ModuleLoader.py
+  /usr/lib/python2.4/site-packages/deskbar/ModuleLoader.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ModuleLoader.pyo
+  /usr/lib/python2.4/site-packages/deskbar/Utils.py
+  /usr/lib/python2.4/site-packages/deskbar/Utils.pyc
+  /usr/lib/python2.4/site-packages/deskbar/Utils.pyo
+  /usr/lib/python2.4/site-packages/deskbar/Watcher.py
+  /usr/lib/python2.4/site-packages/deskbar/Watcher.pyc
+  /usr/lib/python2.4/site-packages/deskbar/Watcher.pyo
+  /usr/lib/python2.4/site-packages/deskbar/__init__.py
+  /usr/lib/python2.4/site-packages/deskbar/__init__.pyc
+  /usr/lib/python2.4/site-packages/deskbar/__init__.pyo
+  /usr/lib/python2.4/site-packages/deskbar/defs.py
+  /usr/lib/python2.4/site-packages/deskbar/defs.pyc
+  /usr/lib/python2.4/site-packages/deskbar/defs.pyo
+  /usr/lib/python2.4/site-packages/deskbar/gnomedesktop/__init__.py
+  /usr/lib/python2.4/site-packages/deskbar/gnomedesktop/__init__.pyc
+  /usr/lib/python2.4/site-packages/deskbar/gnomedesktop/__init__.pyo
+  /usr/lib/python2.4/site-packages/deskbar/gnomedesktop/_gnomedesktop.dll
+  /usr/lib/python2.4/site-packages/deskbar/gnomedesktop/_gnomedesktop.la
+  /usr/lib/python2.4/site-packages/deskbar/gtkexcepthook.py
+  /usr/lib/python2.4/site-packages/deskbar/gtkexcepthook.pyc
+  /usr/lib/python2.4/site-packages/deskbar/gtkexcepthook.pyo
+  /usr/lib/python2.4/site-packages/deskbar/iconentry/__init__.py
+  /usr/lib/python2.4/site-packages/deskbar/iconentry/__init__.pyc
+  /usr/lib/python2.4/site-packages/deskbar/iconentry/__init__.pyo
+  /usr/lib/python2.4/site-packages/deskbar/iconentry/_iconentry.dll
+  /usr/lib/python2.4/site-packages/deskbar/iconentry/_iconentry.la
+  /usr/lib/python2.4/site-packages/deskbar/keybinder/__init__.py
+  /usr/lib/python2.4/site-packages/deskbar/keybinder/__init__.pyc
+  /usr/lib/python2.4/site-packages/deskbar/keybinder/__init__.pyo
+  /usr/lib/python2.4/site-packages/deskbar/keybinder/_keybinder.dll
+  /usr/lib/python2.4/site-packages/deskbar/keybinder/_keybinder.la
+  /usr/lib/python2.4/site-packages/deskbar/osutils/__init__.py
+  /usr/lib/python2.4/site-packages/deskbar/osutils/__init__.pyc
+  /usr/lib/python2.4/site-packages/deskbar/osutils/__init__.pyo
+  /usr/lib/python2.4/site-packages/deskbar/osutils/_osutils.dll
+  /usr/lib/python2.4/site-packages/deskbar/osutils/_osutils.la
+  /usr/lib/python2.4/site-packages/deskbar/ui/About.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/About.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/About.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/DeskbarPreferencesUI.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/DeskbarPreferencesUI.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/DeskbarPreferencesUI.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/DeskbarUI.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/DeskbarUI.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/DeskbarUI.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/EntryHistoryManager.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/EntryHistoryManager.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/EntryHistoryManager.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/ModuleListView.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/ModuleListView.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/ModuleListView.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/__init__.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/__init__.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/__init__.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/completion/CompletionDeskbarUI.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/completion/CompletionDeskbarUI.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/completion/CompletionDeskbarUI.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/completion/DeskbarEntry.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/completion/DeskbarEntry.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/completion/DeskbarEntry.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/completion/__init__.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/completion/__init__.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/completion/__init__.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/Cuemiac.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/Cuemiac.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/Cuemiac.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/CuemiacAlignedWindow.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/CuemiacAlignedWindow.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/CuemiacAlignedWindow.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/CuemiacHistory.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/CuemiacHistory.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/CuemiacHistory.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/DeskbarAppletButton.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/DeskbarAppletButton.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/DeskbarAppletButton.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/__init__.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/__init__.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/cuemiac/__init__.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/entriac/CuemiacEntryUI.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/entriac/CuemiacEntryUI.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/entriac/CuemiacEntryUI.pyo
+  /usr/lib/python2.4/site-packages/deskbar/ui/entriac/__init__.py
+  /usr/lib/python2.4/site-packages/deskbar/ui/entriac/__init__.pyc
+  /usr/lib/python2.4/site-packages/deskbar/ui/entriac/__init__.pyo
+  /usr/share/deskbar-applet/Deskbar_Applet.xml
+  /usr/share/deskbar-applet/art/deskbar-applet-panel-h.png
+  /usr/share/deskbar-applet/art/deskbar-applet-panel-h.svg
+  /usr/share/deskbar-applet/art/deskbar-applet-panel-v.png
+  /usr/share/deskbar-applet/art/deskbar-applet-panel-v.svg
+  /usr/share/deskbar-applet/art/deskbar-applet-small.png
+  /usr/share/deskbar-applet/art/deskbar-applet.svg
+  /usr/share/deskbar-applet/art/epiphany-history.png
+  /usr/share/deskbar-applet/art/folder-bookmark.png
+  /usr/share/deskbar-applet/art/generic.png
+  /usr/share/deskbar-applet/art/google.png
+  /usr/share/deskbar-applet/art/yahoo.png
+  /usr/share/deskbar-applet/mozilla-search.glade
+  /usr/share/deskbar-applet/prefs-dialog.glade
+  /usr/share/deskbar-applet/smart-bookmarks.glade
+  /usr/share/doc/Cygwin/deskbar-applet-2.14.2.README
+  /usr/share/doc/deskbar-applet-2.14.2/AUTHORS
+  /usr/share/doc/deskbar-applet-2.14.2/COPYING
+  /usr/share/doc/deskbar-applet-2.14.2/ChangeLog
+  /usr/share/doc/deskbar-applet-2.14.2/INSTALL
+  /usr/share/doc/deskbar-applet-2.14.2/NEWS
+  /usr/share/doc/deskbar-applet-2.14.2/README
+  /usr/share/doc/deskbar-applet-2.14.2/TODO
+  /usr/share/locale/bg/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/ca/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/cs/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/cy/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/da/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/de/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/dz/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/el/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/es/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/et/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/fi/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/fr/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/gl/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/gu/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/he/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/hi/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/hu/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/id/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/it/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/ja/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/ka/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/ko/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/ku/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/lt/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/mk/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/nb/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/ne/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/nl/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/pa/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/pl/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/pt/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/ru/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/sk/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/sq/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/sr/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/sv/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/th/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/uk/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/vi/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/pixmaps/deskbar-applet.svg
+
+------------------
+
+Port Notes:
+
+----- version 2.14.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
