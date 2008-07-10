@@ -9,39 +9,38 @@ simple interface to manage these plugins to provide you with the search
 results that fit your needs.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.14.4-1
-  gnome-panel-2.20.2-1
-  gtk2-x11-2.12.2-1
+  cygwin-1.5.25-15
+  glib2-2.16.3-1
+  gnome-panel-2.22.2-1
+  gtk2-x11-2.12.10-1
+  libgnome-desktop2-2.22.3-1
   libX11_6-1.1.3-1
   libXau6-1.0.3-1
-  libgnome-desktop2-2.20.2-1
-  python-2.5.1-3
+  python-2.5.2-2
   python-dbus-0.82.3-1
-  python-gconf2-2.20.1-1
-  python-gnome2-2.20.1-1
-  python-gnomeapplet-2.20.0-1
-  python-gnomevfs2-2.20.1-1
-  python-gobject2-2.14.0-1
-  python-gtk2-2.12.0-1
-  python-wnck-2.20.0-1
+  python-gconf2-2.22.1-1
+  python-gnome2-2.22.1-1
+  python-gnomeapplet-2.22.0-1
+  python-gnomevfs2-2.22.1-1
+  python-gobject2-2.14.2-1
+  python-gtk2-2.12.1-1
+  python-wnck-2.22.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.10-1.10-1
+  automake1.10-1.10.1-1
   binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  cygport-0.3.12-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-1
-  gnome-doc-utils-0.12.0-1
-  intltool-0.36.2-1
-  libtool1.5-1.5.23a-2
+  gnome-common-2.20.0-2
+  gnome-doc-utils-0.12.2-1
+  intltool-0.37-1-1
+  libtool-2.2.2-2
   make-3.81-1
-  pkg-config-0.21-1
-  rarian-0.6.0-1
+  pkg-config-0.23a-2
+  rarian-0.8.0-1
   sed-4.1.5-2
 
 Canonical website:
@@ -53,15 +52,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack deskbar-applet-2.20.2-X-src.tar.bz2
+  unpack deskbar-applet-2.22.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./deskbar-applet-2.20.2-X.cygport all
+  cygport ./deskbar-applet-2.22.3-X.cygport all
 
 This will create:
-  /usr/src/deskbar-applet-2.20.2-X-src.tar.bz2
-  /usr/src/deskbar-applet-2.20.2-X.tar.bz2
+  /usr/src/deskbar-applet-2.22.3-X-src.tar.bz2
+  /usr/src/deskbar-applet-2.22.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -105,6 +104,12 @@ Files included in the binary package:
   /usr/lib/deskbar-applet/modules-2.20-compatible/recent.py
   /usr/lib/deskbar-applet/modules-2.20-compatible/recent.pyc
   /usr/lib/deskbar-applet/modules-2.20-compatible/recent.pyo
+  /usr/lib/deskbar-applet/modules-2.20-compatible/templates.py
+  /usr/lib/deskbar-applet/modules-2.20-compatible/templates.pyc
+  /usr/lib/deskbar-applet/modules-2.20-compatible/templates.pyo
+  /usr/lib/deskbar-applet/modules-2.20-compatible/tomboy.py
+  /usr/lib/deskbar-applet/modules-2.20-compatible/tomboy.pyc
+  /usr/lib/deskbar-applet/modules-2.20-compatible/tomboy.pyo
   /usr/lib/deskbar-applet/modules-2.20-compatible/web_address.py
   /usr/lib/deskbar-applet/modules-2.20-compatible/web_address.pyc
   /usr/lib/deskbar-applet/modules-2.20-compatible/web_address.pyo
@@ -157,6 +162,11 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/deskbar/core/__init__.py
   /usr/lib/python2.5/site-packages/deskbar/core/__init__.pyc
   /usr/lib/python2.5/site-packages/deskbar/core/__init__.pyo
+  /usr/lib/python2.5/site-packages/deskbar/core/_userdirs/__init__.py
+  /usr/lib/python2.5/site-packages/deskbar/core/_userdirs/__init__.pyc
+  /usr/lib/python2.5/site-packages/deskbar/core/_userdirs/__init__.pyo
+  /usr/lib/python2.5/site-packages/deskbar/core/_userdirs/__userdirs.dll
+  /usr/lib/python2.5/site-packages/deskbar/core/_userdirs/__userdirs.la
   /usr/lib/python2.5/site-packages/deskbar/core/gnomedesktop/__init__.py
   /usr/lib/python2.5/site-packages/deskbar/core/gnomedesktop/__init__.pyc
   /usr/lib/python2.5/site-packages/deskbar/core/gnomedesktop/__init__.pyo
@@ -249,21 +259,27 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/deskbar/ui/About.py
   /usr/lib/python2.5/site-packages/deskbar/ui/About.pyc
   /usr/lib/python2.5/site-packages/deskbar/ui/About.pyo
+  /usr/lib/python2.5/site-packages/deskbar/ui/CuemiacAlignedView.py
+  /usr/lib/python2.5/site-packages/deskbar/ui/CuemiacAlignedView.pyc
+  /usr/lib/python2.5/site-packages/deskbar/ui/CuemiacAlignedView.pyo
   /usr/lib/python2.5/site-packages/deskbar/ui/CuemiacWindowController.py
   /usr/lib/python2.5/site-packages/deskbar/ui/CuemiacWindowController.pyc
   /usr/lib/python2.5/site-packages/deskbar/ui/CuemiacWindowController.pyo
   /usr/lib/python2.5/site-packages/deskbar/ui/CuemiacWindowView.py
   /usr/lib/python2.5/site-packages/deskbar/ui/CuemiacWindowView.pyc
   /usr/lib/python2.5/site-packages/deskbar/ui/CuemiacWindowView.pyo
-  /usr/lib/python2.5/site-packages/deskbar/ui/DeskbarApplet.py
-  /usr/lib/python2.5/site-packages/deskbar/ui/DeskbarApplet.pyc
-  /usr/lib/python2.5/site-packages/deskbar/ui/DeskbarApplet.pyo
+  /usr/lib/python2.5/site-packages/deskbar/ui/DeskbarTray.py
+  /usr/lib/python2.5/site-packages/deskbar/ui/DeskbarTray.pyc
+  /usr/lib/python2.5/site-packages/deskbar/ui/DeskbarTray.pyo
   /usr/lib/python2.5/site-packages/deskbar/ui/__init__.py
   /usr/lib/python2.5/site-packages/deskbar/ui/__init__.pyc
   /usr/lib/python2.5/site-packages/deskbar/ui/__init__.pyo
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacActionsTreeView.py
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacActionsTreeView.pyc
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacActionsTreeView.pyo
+  /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacAlignedWindow.py
+  /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacAlignedWindow.pyc
+  /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacAlignedWindow.pyo
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacEntry.py
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacEntry.pyc
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacEntry.pyo
@@ -282,6 +298,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacTreeView.py
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacTreeView.pyc
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/CuemiacTreeView.pyo
+  /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/LingeringSelectionWindow.py
+  /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/LingeringSelectionWindow.pyc
+  /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/LingeringSelectionWindow.pyo
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/__init__.py
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/__init__.pyc
   /usr/lib/python2.5/site-packages/deskbar/ui/cuemiac/__init__.pyo
@@ -318,25 +337,30 @@ Files included in the binary package:
   /usr/share/deskbar-applet/art/generic.png
   /usr/share/deskbar-applet/art/gpm-suspend-to-disk.png
   /usr/share/deskbar-applet/art/gpm-suspend-to-ram.png
+  /usr/share/deskbar-applet/art/note-new.png
+  /usr/share/deskbar-applet/art/note.png
   /usr/share/deskbar-applet/art/web-search.png
   /usr/share/deskbar-applet/art/yahoo.png
   /usr/share/deskbar-applet/mozilla-search.glade
   /usr/share/deskbar-applet/prefs-dialog.glade
   /usr/share/deskbar-applet/smart-bookmarks.glade
-  /usr/share/doc/deskbar-applet-2.20.2/AUTHORS
-  /usr/share/doc/deskbar-applet-2.20.2/COPYING
-  /usr/share/doc/deskbar-applet-2.20.2/ChangeLog
-  /usr/share/doc/deskbar-applet-2.20.2/INSTALL
-  /usr/share/doc/deskbar-applet-2.20.2/MAINTAINERS
-  /usr/share/doc/deskbar-applet-2.20.2/NEWS
-  /usr/share/doc/deskbar-applet-2.20.2/README
-  /usr/share/doc/deskbar-applet-2.20.2/TODO
+  /usr/share/doc/deskbar-applet-2.22.3/AUTHORS
+  /usr/share/doc/deskbar-applet-2.22.3/COPYING
+  /usr/share/doc/deskbar-applet-2.22.3/ChangeLog
+  /usr/share/doc/deskbar-applet-2.22.3/INSTALL
+  /usr/share/doc/deskbar-applet-2.22.3/MAINTAINERS
+  /usr/share/doc/deskbar-applet-2.22.3/NEWS
+  /usr/share/doc/deskbar-applet-2.22.3/README
+  /usr/share/doc/deskbar-applet-2.22.3/TODO
   /usr/share/gnome/help/deskbar/C/deskbar.xml
   /usr/share/gnome/help/deskbar/C/figures/deskbar-applet.png
   /usr/share/gnome/help/deskbar/C/legal.xml
   /usr/share/gnome/help/deskbar/ca/deskbar.xml
   /usr/share/gnome/help/deskbar/ca/figures/deskbar-applet.png
   /usr/share/gnome/help/deskbar/ca/legal.xml
+  /usr/share/gnome/help/deskbar/el/deskbar.xml
+  /usr/share/gnome/help/deskbar/el/figures/deskbar-applet.png
+  /usr/share/gnome/help/deskbar/el/legal.xml
   /usr/share/gnome/help/deskbar/en_GB/deskbar.xml
   /usr/share/gnome/help/deskbar/en_GB/figures/deskbar-applet.png
   /usr/share/gnome/help/deskbar/en_GB/legal.xml
@@ -349,6 +373,12 @@ Files included in the binary package:
   /usr/share/gnome/help/deskbar/oc/deskbar.xml
   /usr/share/gnome/help/deskbar/oc/figures/deskbar-applet.png
   /usr/share/gnome/help/deskbar/oc/legal.xml
+  /usr/share/gnome/help/deskbar/pt_BR/deskbar.xml
+  /usr/share/gnome/help/deskbar/pt_BR/figures/deskbar-applet.png
+  /usr/share/gnome/help/deskbar/pt_BR/legal.xml
+  /usr/share/gnome/help/deskbar/ru/deskbar.xml
+  /usr/share/gnome/help/deskbar/ru/figures/deskbar-applet.png
+  /usr/share/gnome/help/deskbar/ru/legal.xml
   /usr/share/gnome/help/deskbar/sv/deskbar.xml
   /usr/share/gnome/help/deskbar/sv/figures/deskbar-applet.png
   /usr/share/gnome/help/deskbar/sv/legal.xml
@@ -361,6 +391,7 @@ Files included in the binary package:
   /usr/share/icons/hicolor/48x48/apps/deskbar-applet.png
   /usr/share/icons/hicolor/scalable/apps/deskbar-applet.svg
   /usr/share/locale/ar/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/as/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/be/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/be@latin/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/bg/LC_MESSAGES/deskbar-applet.mo
@@ -390,6 +421,7 @@ Files included in the binary package:
   /usr/share/locale/it/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/ja/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/ka/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/kn/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/ko/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/ku/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/lt/LC_MESSAGES/deskbar-applet.mo
@@ -402,6 +434,7 @@ Files included in the binary package:
   /usr/share/locale/nb/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/ne/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/nl/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/nn/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/oc/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/or/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/pa/LC_MESSAGES/deskbar-applet.mo
@@ -418,27 +451,32 @@ Files included in the binary package:
   /usr/share/locale/sr@Latn/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/sv/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/ta/LC_MESSAGES/deskbar-applet.mo
+  /usr/share/locale/te/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/th/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/tr/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/uk/LC_MESSAGES/deskbar-applet.mo
-  /usr/share/locale/uz/LC_MESSAGES/deskbar-applet.mo
-  /usr/share/locale/uz@cyrillic/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/vi/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/zh_HK/LC_MESSAGES/deskbar-applet.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/deskbar-applet.mo
   /usr/share/omf/deskbar/deskbar-C.omf
   /usr/share/omf/deskbar/deskbar-ca.omf
+  /usr/share/omf/deskbar/deskbar-el.omf
   /usr/share/omf/deskbar/deskbar-en_GB.omf
   /usr/share/omf/deskbar/deskbar-es.omf
   /usr/share/omf/deskbar/deskbar-fr.omf
   /usr/share/omf/deskbar/deskbar-oc.omf
+  /usr/share/omf/deskbar/deskbar-pt_BR.omf
+  /usr/share/omf/deskbar/deskbar-ru.omf
   /usr/share/omf/deskbar/deskbar-sv.omf
   /usr/share/omf/deskbar/deskbar-uk.omf
 
 ------------------
 
 Port Notes:
+
+----- version 2.22.3-1 -----
+Version bump for GNOME 2.22.
 
 ----- version 2.20.2-1 -----
 Version bump for GNOME 2.20.

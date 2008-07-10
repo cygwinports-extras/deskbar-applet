@@ -1,0 +1,14 @@
+inherit python gnome2
+
+DESCRIPTION="GNOME search interface applet"
+HOMEPAGE="http://raphael.slinckx.net/deskbar/"
+
+DIFF_EXCLUDES="defs.py"
+
+src_compile() {
+	cd ${S}
+	gnome2_autoreconf
+	cd ${B}
+	cygconf --disable-static --disable-schemas-install --disable-evolution
+	cygmake LDFLAGS='-no-undefined' LIBS="${LIBPYTHON}"
+}
