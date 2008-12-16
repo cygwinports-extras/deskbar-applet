@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin glib2 gnome-panel gtk2-x11 libX11_6 libXau6 libgnome-desktop2 python python-dbus python-gconf2 python-gnome2 python-gnomeapplet python-gnomevfs2 python-gobject2 python-gtk2 python-wnck
+requires: cygwin GConf2 gnome-panel libglib2.0_0 libgtk2.0_0 libX11_6 libXau6 python python-dbus python-gconf2 python-gnome2 python-gnomeapplet python-gnomedesktop2 python-gnomekeyring python-gobject2 python-gtk2 python-wnck
 sdesc: "GNOME search interface applet"
 ldesc: "The goal of DeskbarApplet is to provide an omnipresent versatile
 search interface. By typing search terms into the deskbar entry in your
