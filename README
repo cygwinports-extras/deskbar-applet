@@ -10,21 +10,21 @@ results that fit your needs.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  gnome-panel-2.24.2-1
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.5-1
-  libX11_6-1.1.5-1
+  gnome-panel-2.24.3-1
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-1
+  libX11_6-1.1.5-2
   libXau6-1.0.4-1
-  python-2.5.2-4
+  python-2.5.4-1
   python-dbus-0.83.0-1
   python-gconf2-2.22.3-1
   python-gnome2-2.22.3-1
-  python-gnomeapplet-2.24.0-1
-  python-gnomedesktop2-2.24.0-1
-  python-gnomekeyring-2.24.0-1
-  python-gobject2-2.15.4-1
-  python-gtk2-2.13.0-1
-  python-wnck-2.24.0-1
+  python-gnomeapplet-2.24.1-1
+  python-gnomedesktop2-2.24.1-1
+  python-gnomekeyring-2.24.1-1
+  python-gobject2-2.16.0-1
+  python-gtk2-2.14.0-1
+  python-wnck-2.24.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -35,7 +35,7 @@ Build requirements:
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gnome-common-2.24.0-1
-  gnome-doc-utils-0.14.0-1
+  gnome-doc-utils-0.14.2-1
   intltool-0.40.5-1
   libtool-2.2.6a-1
   make-3.81-1
@@ -52,15 +52,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack deskbar-applet-2.24.2-X-src.tar.bz2
+  unpack deskbar-applet-2.24.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./deskbar-applet-2.24.2-X.cygport all
+  cygport ./deskbar-applet-2.24.3-X.cygport all
 
 This will create:
-  /usr/src/deskbar-applet-2.24.2-X-src.tar.bz2
-  /usr/src/deskbar-applet-2.24.2-X.tar.bz2
+  /usr/src/deskbar-applet-2.24.3-X-src.tar.bz2
+  /usr/src/deskbar-applet-2.24.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -377,14 +377,14 @@ Files included in the binary package:
   /usr/share/deskbar-applet/mozilla-search.glade
   /usr/share/deskbar-applet/prefs-dialog.glade
   /usr/share/deskbar-applet/smart-bookmarks.glade
-  /usr/share/doc/deskbar-applet-2.24.2/AUTHORS
-  /usr/share/doc/deskbar-applet-2.24.2/COPYING
-  /usr/share/doc/deskbar-applet-2.24.2/ChangeLog
-  /usr/share/doc/deskbar-applet-2.24.2/INSTALL
-  /usr/share/doc/deskbar-applet-2.24.2/MAINTAINERS
-  /usr/share/doc/deskbar-applet-2.24.2/NEWS
-  /usr/share/doc/deskbar-applet-2.24.2/README
-  /usr/share/doc/deskbar-applet-2.24.2/TODO
+  /usr/share/doc/deskbar-applet-2.24.3/AUTHORS
+  /usr/share/doc/deskbar-applet-2.24.3/COPYING
+  /usr/share/doc/deskbar-applet-2.24.3/ChangeLog
+  /usr/share/doc/deskbar-applet-2.24.3/INSTALL
+  /usr/share/doc/deskbar-applet-2.24.3/MAINTAINERS
+  /usr/share/doc/deskbar-applet-2.24.3/NEWS
+  /usr/share/doc/deskbar-applet-2.24.3/README
+  /usr/share/doc/deskbar-applet-2.24.3/TODO
   /usr/share/gnome/help/deskbar/C/deskbar.xml
   /usr/share/gnome/help/deskbar/C/figures/deskbar-applet.png
   /usr/share/gnome/help/deskbar/C/legal.xml
@@ -519,6 +519,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.24.3-1 -----
+Version bump.
 
 ----- version 2.24.2-1 -----
 Version bump for GNOME 2.24.
