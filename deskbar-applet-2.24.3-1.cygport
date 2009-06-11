@@ -1,8 +1,0 @@
-inherit pygtk
-
-DESCRIPTION="GNOME search interface applet"
-HOMEPAGE="http://raphael.slinckx.net/deskbar/"
-
-DIFF_EXCLUDES="defs.py"
-
-CYGCONF_ARGS="--disable-schemas-install --disable-evolution"

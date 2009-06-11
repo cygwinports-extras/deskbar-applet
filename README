@@ -9,38 +9,40 @@ simple interface to manage these plugins to provide you with the search
 results that fit your needs.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  gnome-panel-2.24.3-1
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-1
-  libX11_6-1.1.5-2
-  libXau6-1.0.4-1
-  python-2.5.4-1
+  cygwin-1.7.0-48
+  gnome-panel-2.26.2-1
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.1-1
+  libgtk2.0_0-2.16.1-1
+  libX11_6-1.2-10
+  libXau6-1.0.4-10
+  python-2.5.4-10
   python-dbus-0.83.0-1
-  python-gconf2-2.22.3-1
-  python-gnome2-2.22.3-1
-  python-gnomeapplet-2.24.1-1
-  python-gnomedesktop2-2.24.1-1
-  python-gnomekeyring-2.24.1-1
-  python-gobject2-2.16.0-1
-  python-gtk2-2.14.0-1
-  python-wnck-2.24.1-1
+  python-gconf2-2.26.1-1
+  python-gnome2-2.26.1-1
+  python-gnomeapplet-2.26.0-1
+  python-gnomedesktop2-2.26.0-1
+  python-gnomekeyring-2.26.0-1
+  python-gobject2-2.16.1-10
+  python-gtk2-2.14.1-1
+  python-simplejson-2.0.9-1
+  python-wnck-2.26.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
-  cygport-0.4.3-1
+  cygport-0.9.6-1
   gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  gnome-doc-utils-0.14.2-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
-  rarian-0.8.1-1
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-2
+  gnome-doc-utils-0.16.1-2
+  intltool-0.40.6-1
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
+  rarian-0.8.1-11
   sed-4.1.5-2
 
 Canonical website:
@@ -107,6 +109,9 @@ Files included in the binary package:
   /usr/lib/deskbar-applet/modules-2.20-compatible/mozilla.py
   /usr/lib/deskbar-applet/modules-2.20-compatible/mozilla.pyc
   /usr/lib/deskbar-applet/modules-2.20-compatible/mozilla.pyo
+  /usr/lib/deskbar-applet/modules-2.20-compatible/opensearch.py
+  /usr/lib/deskbar-applet/modules-2.20-compatible/opensearch.pyc
+  /usr/lib/deskbar-applet/modules-2.20-compatible/opensearch.pyo
   /usr/lib/deskbar-applet/modules-2.20-compatible/programs.py
   /usr/lib/deskbar-applet/modules-2.20-compatible/programs.pyc
   /usr/lib/deskbar-applet/modules-2.20-compatible/programs.pyo
@@ -374,23 +379,25 @@ Files included in the binary package:
   /usr/share/deskbar-applet/art/web-search.png
   /usr/share/deskbar-applet/art/wikipedia.png
   /usr/share/deskbar-applet/art/yahoo.png
-  /usr/share/deskbar-applet/mozilla-search.glade
-  /usr/share/deskbar-applet/prefs-dialog.glade
-  /usr/share/deskbar-applet/smart-bookmarks.glade
-  /usr/share/doc/deskbar-applet-2.24.3/AUTHORS
-  /usr/share/doc/deskbar-applet-2.24.3/COPYING
-  /usr/share/doc/deskbar-applet-2.24.3/ChangeLog
-  /usr/share/doc/deskbar-applet-2.24.3/INSTALL
-  /usr/share/doc/deskbar-applet-2.24.3/MAINTAINERS
-  /usr/share/doc/deskbar-applet-2.24.3/NEWS
-  /usr/share/doc/deskbar-applet-2.24.3/README
-  /usr/share/doc/deskbar-applet-2.24.3/TODO
+  /usr/share/deskbar-applet/mozilla-search.ui
+  /usr/share/deskbar-applet/prefs-dialog.ui
+  /usr/share/deskbar-applet/smart-bookmarks.ui
+  /usr/share/doc/deskbar-applet/AUTHORS
+  /usr/share/doc/deskbar-applet/COPYING
+  /usr/share/doc/deskbar-applet/ChangeLog
+  /usr/share/doc/deskbar-applet/MAINTAINERS
+  /usr/share/doc/deskbar-applet/NEWS
+  /usr/share/doc/deskbar-applet/README
+  /usr/share/doc/deskbar-applet/TODO
   /usr/share/gnome/help/deskbar/C/deskbar.xml
   /usr/share/gnome/help/deskbar/C/figures/deskbar-applet.png
   /usr/share/gnome/help/deskbar/C/legal.xml
   /usr/share/gnome/help/deskbar/ca/deskbar.xml
   /usr/share/gnome/help/deskbar/ca/figures/deskbar-applet.png
   /usr/share/gnome/help/deskbar/ca/legal.xml
+  /usr/share/gnome/help/deskbar/de/deskbar.xml
+  /usr/share/gnome/help/deskbar/de/figures/deskbar-applet.png
+  /usr/share/gnome/help/deskbar/de/legal.xml
   /usr/share/gnome/help/deskbar/el/deskbar.xml
   /usr/share/gnome/help/deskbar/el/figures/deskbar-applet.png
   /usr/share/gnome/help/deskbar/el/legal.xml
@@ -504,6 +511,7 @@ Files included in the binary package:
   /usr/share/locale/zh_TW/LC_MESSAGES/deskbar-applet.mo
   /usr/share/omf/deskbar/deskbar-C.omf
   /usr/share/omf/deskbar/deskbar-ca.omf
+  /usr/share/omf/deskbar/deskbar-de.omf
   /usr/share/omf/deskbar/deskbar-el.omf
   /usr/share/omf/deskbar/deskbar-en_GB.omf
   /usr/share/omf/deskbar/deskbar-es.omf
