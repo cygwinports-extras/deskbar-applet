@@ -9,5 +9,5 @@ src_compile() {
 	cd ${S}
 	gnome2_autoreconf
 	cd ${B}
-	pygtk_compile --disable-schemas-install --disable-evolution
+	pygtk_compile --disable-schemas-install
 }
